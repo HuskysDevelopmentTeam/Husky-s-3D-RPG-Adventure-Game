@@ -1,0 +1,59 @@
+apply plugin:'java'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation "org.lwjgl:lwjgl:3.2.1"
+    implementation "org.lwjgl:lwjgl-assimp:3.2.1"
+    implementation "org.lwjgl:lwjgl-bgfx:3.2.1"
+    implementation "org.lwjgl:lwjgl-cuda:3.2.1"
+    implementation "org.lwjgl:lwjgl-glfw:3.2.1"
+    implementation "org.lwjgl:lwjgl-jawt:3.2.1"
+    implementation "org.lwjgl:lwjgl-nanovg:3.2.1"
+    implementation "org.lwjgl:lwjgl-nfd:3.2.1"
+    implementation "org.lwjgl:lwjgl-nuklear:3.2.1"
+    implementation "org.lwjgl:lwjgl-odbc:3.2.1"
+    implementation "org.lwjgl:lwjgl-openal:3.2.1"
+    implementation "org.lwjgl:lwjgl-opencl:3.2.1"
+    implementation "org.lwjgl:lwjgl-opengl:3.2.1"
+    implementation "org.lwjgl:lwjgl-opengles:3.2.1"
+    implementation "org.lwjgl:lwjgl-openvr:3.2.1"
+    implementation "org.lwjgl:lwjgl-opus:3.2.1"
+    implementation "org.lwjgl:lwjgl-ovr:3.2.1"
+    implementation "org.lwjgl:lwjgl-par:3.2.1"
+    implementation "org.lwjgl:lwjgl-remotery:3.2.1"
+    implementation "org.lwjgl:lwjgl-stb:3.2.1"
+    implementation "org.lwjgl:lwjgl-vma:3.2.1"
+    implementation "org.lwjgl:lwjgl-vulkan:3.2.1"
+    implementation "org.lwjgl:lwjgl-xxhash:3.2.1"
+    implementation "org.lwjgl:lwjgl-yoga:3.2.1"
+    runtimeOnly "org.lwjgl:lwjgl:3.2.1:natives-windows"
+    runtimeOnly "org.lwjgl:lwjgl-assimp:3.2.1:natives-windows"
+    runtimeOnly "org.lwjgl:lwjgl-bgfx:3.2.1:natives-windows"
+    runtimeOnly "org.lwjgl:lwjgl-glfw:3.2.1:natives-windows"
+    runtimeOnly "org.lwjgl:lwjgl-nanovg:3.2.1:natives-windows"
+    runtimeOnly "org.lwjgl:lwjgl-nfd:3.2.1:natives-windows"
+    runtimeOnly "org.lwjgl:lwjgl-nuklear:3.2.1:natives-windows"
+    runtimeOnly "org.lwjgl:lwjgl-openal:3.2.1:natives-windows"
+    runtimeOnly "org.lwjgl:lwjgl-opengl:3.2.1:natives-windows"
+    runtimeOnly "org.lwjgl:lwjgl-opengles:3.2.1:natives-windows"
+    runtimeOnly "org.lwjgl:lwjgl-openvr:3.2.1:natives-windows"
+    runtimeOnly "org.lwjgl:lwjgl-opus:3.2.1:natives-windows"
+    runtimeOnly "org.lwjgl:lwjgl-ovr:3.2.1:natives-windows"
+    runtimeOnly "org.lwjgl:lwjgl-par:3.2.1:natives-windows"
+    runtimeOnly "org.lwjgl:lwjgl-remotery:3.2.1:natives-windows"
+    runtimeOnly "org.lwjgl:lwjgl-stb:3.2.1:natives-windows"
+    runtimeOnly "org.lwjgl:lwjgl-vma:3.2.1:natives-windows"
+    runtimeOnly "org.lwjgl:lwjgl-xxhash:3.2.1:natives-windows"
+    runtimeOnly "org.lwjgl:lwjgl-yoga:3.2.1:natives-windows"
+    implementation "org.joml:joml:1.9.12"
+    implementation "com.code-disaster.steamworks4j:steamworks4j:1.8.0"
+    implementation "com.code-disaster.steamworks4j:steamworks4j-server:1.8.0"
+    compile group: 'com.google.code.gson', name: 'gson', version: '2.7'
+    compile group: 'commons-io', name: 'commons-io', version: '2.6'
+    compile group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.10.0'
+    compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.10.0'
+    compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.7'
+}
