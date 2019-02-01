@@ -184,7 +184,7 @@ public class Display {
 	 * 
 	 * @param icons The locations of the images that will become the icon
 	 */
-	public static void setIcon(ResourceLocation... icons)
+	public static void setIcon(Identifier... icons)
 	{
 		GLFWImage.Buffer buffer = GLFWImage.create(icons.length);
 		for (int i = 0; i < icons.length; i++)

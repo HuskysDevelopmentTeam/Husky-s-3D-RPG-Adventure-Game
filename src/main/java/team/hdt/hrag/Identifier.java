@@ -9,13 +9,13 @@ import java.io.InputStream;
  * 
  * @author Ocelot5836
  */
-public class ResourceLocation
+public class Identifier
 {
 
 	private String domain;
 	private String location;
 
-	public ResourceLocation(String location)
+	public Identifier(String location)
 	{
 		String[] resourceLocationRaw = location.split(":", 2);
 		if (resourceLocationRaw.length > 1)
@@ -30,19 +30,19 @@ public class ResourceLocation
 		}
 	}
 
-	public ResourceLocation(String domain, String location)
+	public Identifier(String domain, String location)
 	{
 		this.domain = domain;
 		this.location = location;
 	}
 
-	public ResourceLocation(ResourceLocation location)
+	public Identifier(Identifier location)
 	{
 		this.domain = location.domain;
 		this.location = location.location;
 	}
 
-	public ResourceLocation(ResourceLocation folder, String location)
+	public Identifier(Identifier folder, String location)
 	{
 		this.location = folder.domain + ":" + folder.location + "/" + location;
 	}
@@ -76,7 +76,7 @@ public class ResourceLocation
 	 */
 	public InputStream getInputStream()
 	{
-		return ResourceLocation.class.getResourceAsStream(this.getPath());
+		return Identifier.class.getResourceAsStream(this.getPath());
 	}
 
 	@Override
@@ -95,9 +95,9 @@ public class ResourceLocation
 		{
 			return true;
 		}
-		else if (obj instanceof ResourceLocation)
+		else if (obj instanceof Identifier)
 		{
-			ResourceLocation resourcelocation = (ResourceLocation) obj;
+			Identifier resourcelocation = (Identifier) obj;
 			return this.domain.equals(resourcelocation.domain) && this.location.equals(resourcelocation.location);
 		}
 		return false;
