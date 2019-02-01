@@ -1,13 +1,13 @@
 /*
 package team.hdt.hrag;
 
-import com.zerra.client.gfx.model.Model;
-import com.zerra.client.gfx.texture.BasicTexture;
-import com.zerra.client.gfx.texture.ITexture;
-import com.zerra.client.gfx.texture.cubemap.CubeMapTextureData;
-import com.zerra.client.gfx.texture.cubemap.CubemapTexture;
-import com.zerra.client.sound.Sound;
-import com.zerra.client.sound.SoundImpl;
+import com.zerra.mod.gfx.model.Model;
+import com.zerra.mod.gfx.texture.BasicTexture;
+import com.zerra.mod.gfx.texture.ITexture;
+import com.zerra.mod.gfx.texture.cubemap.CubeMapTextureData;
+import com.zerra.mod.gfx.texture.cubemap.CubemapTexture;
+import com.zerra.mod.sound.Sound;
+import com.zerra.mod.sound.SoundImpl;
 import org.apache.commons.io.IOUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
